@@ -1,0 +1,8 @@
+This directory constains scripts for packaging a proper debian archive.
+
+createorig.sh:
+	Move this script and debian/ to repo-dir/../ and execute ./createorig.sh repo-dir
+        to create the *orig.tar.gz
+	and brewtarget-<version>/ for packaging. Then, you can cd to
+	brewtarget-<version>/ and execute "dpkg-buildpackage" to create a
+	proper package.
