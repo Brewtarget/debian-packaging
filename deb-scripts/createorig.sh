@@ -17,7 +17,7 @@ cp -r ${REPODIR} ${TARDIR}
 # Clean the source dir of extraneous files/dirs
 cd ${TARDIR}
 cd ..
-rm -rf $(find ${TARDIR} | grep '.git') # Remove git files.
+rm -rf $(find ${TARDIR} | grep '[.]git') # Remove git files.
 
 # Create tar file
 tar -cf ${TARFILE} ${TARDIR}
