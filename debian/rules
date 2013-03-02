@@ -1,11 +1,17 @@
 #!/usr/bin/make -f
 install-dir = "$(shell pwd)/debian/brewtarget"
+include /usr/share/hardening-includes/hardening.make
+
+CXXFLAGS=$(shell dpkg-buildflags --get CXXFLAGS)
+LDFLAGS=$(shell dpkg-buildflags --get LDFLAGS)
+CXXFLAGS+=$(HARDENING_CFLAGS)
+LDFLAGS+=$(HARDENING_LDFLAGS)
 
 override_dh_auto_configure:
 	if ! test -d build; then mkdir build; fi
 	if ! test -d build/cmake; then mkdir build/cmake; fi
 	cd build/cmake; \
-	cmake ../../ -DDO_RELEASE_BUILD=ON -DNO_MESSING_WITH_FLAGS=ON -DCMAKE_INSTALL_PREFIX=$(install-dir) -DEXEC_PREFIX=usr
+	cmake ../../ -DCMAKE_CXX_FLAGS="$(CXXFLAGS)" -DCMAKE_EXE_LINKER_FLAGS="$(LDFLAGS)" -DDO_RELEASE_BUILD=ON -DNO_MESSING_WITH_FLAGS=ON -DCMAKE_INSTALL_PREFIX=$(install-dir) -DEXEC_PREFIX=usr
 
 override_dh_auto_build:
 	cd build/cmake; \
