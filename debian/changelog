@@ -1,6 +1,10 @@
 brewtarget (2.0.1-1) unstable; urgency=low
 
   * New upstream release
+  * Now importing hardening flags.
+  * Updated standards version to 3.9.4.
+  * Updated compat to 9
+  * Added libqtwebkit-dev to the build dependencies. 
 
  -- Philip G. Lee <rocketman768@gmail.com>  Mon, 17 Mar 2013 20:41:21 -0600
 
