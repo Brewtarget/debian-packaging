@@ -4,7 +4,7 @@ Priority: optional
 Maintainer: Philip G. Lee <rocketman768@gmail.com>
 Build-Depends: cmake (>= 2.8), debhelper (>= 7.0.50), autotools-dev, libqt4-dev, qt4-qmake, libphonon-dev, libqtwebkit-dev, sqlite3, hardening-includes
 Standards-Version: 3.9.4
-Homepage: http://brewtarget.sourceforge.net
+Homepage: http://www.brewtarget.org
 
 Package: brewtarget
 Architecture: any
