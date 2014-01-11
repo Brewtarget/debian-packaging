@@ -2,7 +2,7 @@
 
 REPODIR=""
 NAME="brewtarget"
-VERSION="2.0.1"
+VERSION="2.0.2"
 TARDIR="$NAME-$VERSION"
 TARFILE="${NAME}_${VERSION}.orig.tar"
 

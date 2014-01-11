@@ -2,8 +2,8 @@ Source: brewtarget
 Section: misc
 Priority: optional
 Maintainer: Philip G. Lee <rocketman768@gmail.com>
-Build-Depends: cmake (>= 2.8), debhelper (>= 7.0.50), autotools-dev, libqt4-dev, qt4-qmake, libphonon-dev, libqtwebkit-dev, sqlite3, hardening-includes
-Standards-Version: 3.9.4
+Build-Depends: cmake (>= 2.8), debhelper (>= 9.0), autotools-dev, libqt4-dev, qt4-qmake, libphonon-dev, libqtwebkit-dev, sqlite3, hardening-includes
+Standards-Version: 3.9.5
 Homepage: http://www.brewtarget.org
 
 Package: brewtarget
@@ -14,3 +14,4 @@ Description: GUI beer brewing software
  allows you to create recipes from a database of ingredients. It calculates all
  the important parameters, helps you with mash temperatures, and just makes the
  process of recipe formulation much easier.
+
