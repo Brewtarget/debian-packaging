@@ -6,7 +6,7 @@ brewtarget (2.0.2-1) unstable; urgency=low
   * Bumped standards-version to 3.9.5.
   * Requires debhelper > 9.0.
 
- -- Philip G. Lee <rocketman768@gmail.com>  Sun, 15 Sep 2013 14:09:30 -0600
+ -- Philip G. Lee <rocketman768@gmail.com>  Sat, 11 Jan 2014 15:08:30 -0600
 
 brewtarget (2.0.1-1) unstable; urgency=low
 
