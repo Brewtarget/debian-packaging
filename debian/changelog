@@ -2,11 +2,11 @@ brewtarget (2.0.2-1) unstable; urgency=low
 
   * New upstream release
   * Updated copyright years.
-  * Changed references from sourceforge.net to brewtarget.org. Fixes #1225737.
+  * Changed references from sourceforge.net to brewtarget.org.
   * Bumped standards-version to 3.9.5.
   * Requires debhelper > 9.0.
 
- -- Philip G. Lee <rocketman768@gmail.com>  Sat, 11 Jan 2014 15:08:30 -0600
+ -- Philip G. Lee <rocketman768@gmail.com>  Mon, 27 Jan 2014 08:38:30 -0600
 
 brewtarget (2.0.1-1) unstable; urgency=low
 
