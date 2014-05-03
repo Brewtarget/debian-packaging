@@ -2,29 +2,25 @@
 
 REPODIR=""
 NAME="brewtarget"
-VERSION="2.0.2"
-TARDIR="$NAME-$VERSION"
-TARFILE="${NAME}_${VERSION}.orig.tar"
+VERSION="2.0.3"
+TARFILE="${NAME}_${VERSION}.orig.tar.xz"
+BTDIR="${NAME}-${VERSION}"
 
 if [ -n "$1" ]
 then
    REPODIR="$1"
 fi
 
-# Copy REPODIR to TARDIR
-cp -r ${REPODIR} ${TARDIR}
-
-# Clean the source dir of extraneous files/dirs
-cd ${TARDIR}
-cd ..
-rm -rf $(find ${TARDIR} | grep '[.]git') # Remove git files.
-
 # Create tar file
-tar -cf ${TARFILE} ${TARDIR}
+# The -C option first cds into the REPODIR.
+# The --exclude-vcs gits rid of git shit.
+# The --transform puts everything in the root dir brewtarget-2.0.3/, for
+# example.
+tar -cJf ${TARFILE} -C ${REPODIR} . --exclude-vcs --transform "s|^[.]|$BTDIR|"
 
-# Zip tar file
-gzip --best ${TARFILE}
+# Extract to BTDIR
+tar -xJf ${TARFILE}
 
 # Move debian/ inside
-mv debian ${TARDIR}
+mv debian ${BTDIR}
 
