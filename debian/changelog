@@ -1,3 +1,9 @@
+brewtarget (2.1.0-1) unstable; urgency=low
+
+  * New upstream release
+
+ -- Philip G. Lee <rocketman768@gmail.com>  Sat, 26 Jul 2014 09:24:30 -0500
+
 brewtarget (2.0.3-1) unstable; urgency=low
 
   * New upstream release
