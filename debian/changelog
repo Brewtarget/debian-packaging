@@ -3,6 +3,7 @@ brewtarget (2.1.0-1) unstable; urgency=low
   * New upstream release
   * Converted debian/copyright to machine-readable format
   * Removed deprecated hardening-includes, using dpkg-buildflags
+  * Removed sqlite3 build dependency
 
  -- Philip G. Lee <rocketman768@gmail.com>  Sun, 14 Sep 2014 13:41:30 -0500
 
