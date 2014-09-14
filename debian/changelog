@@ -1,8 +1,10 @@
 brewtarget (2.1.0-1) unstable; urgency=low
 
   * New upstream release
+  * Converted debian/copyright to machine-readable format
+  * Removed deprecated hardening-includes, using dpkg-buildflags
 
- -- Philip G. Lee <rocketman768@gmail.com>  Sat, 26 Jul 2014 09:24:30 -0500
+ -- Philip G. Lee <rocketman768@gmail.com>  Sun, 14 Sep 2014 13:41:30 -0500
 
 brewtarget (2.0.3-1) unstable; urgency=low
 

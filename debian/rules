@@ -1,11 +1,10 @@
 #!/usr/bin/make -f
 install-dir = "$(shell pwd)/debian/brewtarget"
-include /usr/share/hardening-includes/hardening.make
 
+CPPFLAGS=$(shell dpkg-buildflags --get CPPFLAGS)
+CFLAGS=$(shell dpkg-buildflags --get CFLAGS)
 CXXFLAGS=$(shell dpkg-buildflags --get CXXFLAGS)
 LDFLAGS=$(shell dpkg-buildflags --get LDFLAGS)
-CXXFLAGS+=$(HARDENING_CFLAGS)
-LDFLAGS+=$(HARDENING_LDFLAGS)
 
 override_dh_auto_configure:
 	if ! test -d build; then mkdir build; fi
