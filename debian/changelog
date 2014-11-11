@@ -2,6 +2,7 @@ brewtarget (2.2.0-1) unstable; urgency=low
 
   * New upstream release
   * Updated build-depends for qt5 build
+  * Added qttools5-dev to build depends
 
  -- Philip G. Lee <rocketman768@gmail.com>  Sun, 09 Nov 2014 13:14:30 -0600
 
