@@ -17,6 +17,10 @@ Files: data/sounds/*
 Copyright: 2011, Jay Cummings <finalgravitypodcast@gmail.com>
 License: GPL-3
 
+Files: data/sounds/beep.ogg
+Copyright: 2014 Philip G. Lee <rocketman768@gmail.com>
+License: WTFPL-2
+
 Files: images/*
 Copyright: 2009-2014, Philip G. Lee <rocketman768@gmail.com>
            2009-2010, Eric Tamme
