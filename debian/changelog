@@ -1,3 +1,10 @@
+brewtarget (2.3.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Disabled QTMultimedia until link issue is resolved
+
+ -- Philip G. Lee <rocketman768@gmail.com>  Sun, 10 Jan 2016 13:38:30 -0800
+
 brewtarget (2.2.0-1) unstable; urgency=low
 
   * New upstream release
