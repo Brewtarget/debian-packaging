@@ -1,0 +1,5 @@
+# watch control file for uscan
+version=3
+opts="filenamemangle=s/.+\/v?(\d\S*)\/.*\.orig\.tar\.xz/brewtarget-$1\.tar\.xz/" \
+  https://github.com/Brewtarget/brewtarget/releases .*/v?(\d\S*)/\S*\.orig\.tar\.xz \
+  debian uupdate
