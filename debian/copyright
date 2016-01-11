@@ -1,7 +1,7 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Brewtarget
 Upstream-Contact: Philip G. Lee <rocketman768@gmail.com>
-Source: https://gitorious.org/brewtarget
+Source: https://github.com/Brewtarget/brewtarget
 Copyright: 2009-2016, Philip G. Lee <rocketman768@gmail.com>
 License: GPL-3
 
