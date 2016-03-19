@@ -1,3 +1,11 @@
+brewtarget (2.3.1-1) unstable; urgency=low
+
+  * New upstream release
+  * Require qttools5-dev-tools instead of qttools5-dev
+  * Require libqt5svg5-dev
+
+ -- Philip G. Lee <rocketman768@gmail.com>  Sat, 19 Mar 2016 14:27:30 -0700
+
 brewtarget (2.3.0-1) unstable; urgency=low
 
   * New upstream release
