@@ -1,3 +1,14 @@
+brewtarget (2.4.0-1) unstable; urgency=low
+
+  * New upstream release
+  * Require libqt5sql-psql
+  * Added libqt5webkit5-dev to build depends
+  * Updated compat to 12
+  * Added Rules-Require-Root
+  * Updated debhelper in build depends
+
+ -- Philip G. Lee <rocketman768@gmail.com>  Tue, 15 Sep 2020 14:27:30 -0700
+
 brewtarget (2.3.1-1) unstable; urgency=low
 
   * New upstream release
@@ -53,7 +64,7 @@ brewtarget (2.0.1-1) unstable; urgency=low
   * Now importing hardening flags.
   * Updated standards version to 3.9.4.
   * Updated compat to 9
-  * Added libqtwebkit-dev to the build dependencies. 
+  * Added libqtwebkit-dev to the build dependencies.
 
  -- Philip G. Lee <rocketman768@gmail.com>  Mon, 17 Mar 2013 20:41:21 -0600
 
@@ -75,4 +86,3 @@ brewtarget (1.2.3-1) unstable; urgency=low
   * Initial debian release (Closes: #538751)
 
  -- Philip G. Lee <rocketman768@gmail.com>  Sun, 13 Mar 2011 09:38:00 -0600
- 

@@ -1,4 +1,4 @@
-Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
 Upstream-Name: Brewtarget
 Upstream-Contact: Philip G. Lee <rocketman768@gmail.com>
 Source: https://github.com/Brewtarget/brewtarget

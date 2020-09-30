@@ -2,7 +2,7 @@
 
 REPODIR=""
 NAME="brewtarget"
-VERSION="2.3.1"
+VERSION="2.4.0"
 TARFILE="${NAME}_${VERSION}.orig.tar.xz"
 BTDIR="${NAME}-${VERSION}"
 
@@ -16,7 +16,7 @@ fi
 # The --exclude-vcs gits rid of git shit.
 # The --transform puts everything in the root dir brewtarget-2.3.0/, for
 # example.
-tar -cJf ${TARFILE} -C ${REPODIR} . --exclude-vcs --transform "s|^[.]|$BTDIR|"
+tar -cJf ${TARFILE} -C ${REPODIR} --exclude-vcs --transform "s|^[.]|$BTDIR|" .
 
 # Extract to BTDIR
 tar -xJf ${TARFILE}
