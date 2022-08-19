@@ -1,16 +1,8 @@
 # Brewtarget Debian Packaging
 
-This project contains all files and scripts required to generate a Debian
-package for Brewtarget
+This project is no longer used.  Packages for Linux are now created in the main 
+project via
 
-## Example
-
-Assuming `brewtarget` contains the source we want to package, `2.3.0` is
-the current version, and `debian-packaging` is this repo.
-
-    $ cd debian-packaging
-    $ ./createorig.sh ../brewtarget
-    $ cd brewtarget-2.3.0
-    $ dpkg-buildpackage -us -uc
-    $ lintian --pedantic *.changes | less
-    $ dupload -t mentors *.changes
+    $ make changelog
+    $ make package
+    $ make package_lint
