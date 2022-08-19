@@ -1,4 +1,4 @@
-# Brewtarget Debian Packaging
+# Brewtarget Old Debian Packaging
 
 This project is no longer used.  Packages for Linux are now created in the main 
 project via
